@@ -1,0 +1,84 @@
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .movieGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .movieGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.loadingGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .loadingGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .loadingGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.loadingCard {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.loadingPoster {
+  aspect-ratio: 2/3;
+  background-color: #d1d5db;
+  border-radius: 8px 8px 0 0;
+}
+
+.loadingContent {
+  padding: 16px;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+}
+
+.loadingTitle {
+  height: 16px;
+  background-color: #d1d5db;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.loadingMeta {
+  height: 12px;
+  background-color: #d1d5db;
+  border-radius: 4px;
+  width: 66.666667%;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.emptyMessage {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

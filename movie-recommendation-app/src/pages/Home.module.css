@@ -1,0 +1,33 @@
+.header {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #4b5563;
+  font-size: 16px;
+}
+
+.errorMessage {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.errorText {
+  color: #991b1b;
+  margin-bottom: 4px;
+}
+
+.errorHint {
+  color: #dc2626;
+  font-size: 14px;
+}

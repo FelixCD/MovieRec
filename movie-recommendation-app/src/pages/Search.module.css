@@ -1,0 +1,140 @@
+.searchPage {
+  min-height: 80vh;
+}
+
+.header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.resultCount {
+  color: #4b5563;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Error State */
+.errorMessage {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.errorText {
+  color: #991b1b;
+}
+
+/* No Results State */
+.noResults {
+  text-align: center;
+  padding: 64px 16px;
+  color: #6b7280;
+}
+
+.noResults h2 {
+  font-size: 24px;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.noResults p {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.suggestions {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.suggestions p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+
+.suggestionTags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.suggestionTags span {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.suggestionTags span:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Load More */
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.loadMoreButton {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.loadMoreButton:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.loadMoreButton:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  
+  .noResults {
+    padding: 48px 16px;
+  }
+  
+  .suggestionTags {
+    gap: 6px;
+  }
+  
+  .suggestionTags span {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
